@@ -21,7 +21,7 @@ npm run build
 
 - Product names, prices, colours, sizes, descriptions, availability and image paths live in `data/products.ts`.
 - Campaign and placeholder product photography lives in `public/images/`.
-- The provided BUMBLYZ bee logo is stored as `public/brand-logo.webp` and rendered through the shared `components/brand-logo.tsx` component.
+- The provided BUMBLYZ wordmark is stored as `public/brand-logo.webp`, with its bee mark in `public/brand-mark.webp`, and rendered through the shared `components/brand-logo.tsx` component.
 - Checkout is intentionally a non-transactional handoff page and is ready for a real payment provider to be connected later.
 
 ## Photography credits

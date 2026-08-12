@@ -6,7 +6,7 @@ export default function AboutPage() {
     <div className="about-page">
       <header className="page-hero about-hero"><span>BUMBLYZ / THE IDEA</span><h1>THIS IS<br /><em>BUMBLYZ.</em></h1><p>NOT JUST ANOTHER HOODIE.</p></header>
       <section className="about-intro">
-        <div className="about-logo-art"><Image src="/brand-logo.webp" alt="BUMBLYZ bee logo" fill sizes="(max-width: 760px) 90vw, 55vw" /></div>
+        <div className="about-logo-art"><Image src="/brand-logo.webp" alt="BUMBLYZ Shop bee logo" fill sizes="(max-width: 760px) 92vw, 58vw" /></div>
         <div><span>01 / WHO WE ARE</span><p>BUMBLYZ started with a simple idea: the piece you wear most should say the most about you. We make heavyweight streetwear with strong silhouettes, quiet details and enough attitude to become your everyday uniform.</p></div>
       </section>
       <section className="about-photo"><Image src="/images/campaign-02.webp" alt="BUMBLYZ streetwear campaign photographed in the city" fill sizes="100vw" /><span>DROP 01 / BEHIND THE FORM</span></section>

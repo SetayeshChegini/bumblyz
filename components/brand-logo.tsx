@@ -8,7 +8,13 @@ export function BrandLogo({ light = false, className = "" }: { light?: boolean; 
       className={`brand-logo ${light ? "brand-logo--light" : ""} ${className}`}
       aria-label="BUMBLYZ home"
     >
-      <Image src="/brand-logo.webp" alt="BUMBLYZ bee logo" fill sizes="(max-width: 760px) 44px, 58px" priority />
+      <Image
+        src="/brand-logo.webp"
+        alt="BUMBLYZ Shop bee logo"
+        fill
+        sizes="(max-width: 760px) 112px, 152px"
+        priority
+      />
     </Link>
   );
 }

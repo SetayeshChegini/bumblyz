@@ -15,7 +15,7 @@ function BrandTracker() {
   const x = useTransform(scrollYProgress, [0.12, 0.5], ["3vw", "82vw"]);
   return (
     <motion.div className="brand-tracker" style={{ x: reduceMotion ? 0 : x }} aria-hidden="true">
-      <Image src="/brand-logo.webp" alt="" fill sizes="38px" /><i />
+      <Image src="/brand-mark.webp" alt="" fill sizes="38px" /><i />
     </motion.div>
   );
 }
