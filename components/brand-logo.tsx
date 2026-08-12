@@ -2,7 +2,7 @@ import Link from "next/link";
 import { assetPath } from "@/lib/site";
 
 export function BrandLogo({ light = false, className = "" }: { light?: boolean; className?: string }) {
-  const logoUrl = assetPath("/brand-logo.webp");
+  const logoUrl = `${assetPath("/brand-logo.webp")}?v=b388e5e`;
 
   return (
     <Link
