@@ -20,6 +20,7 @@ export function BrandLogo({ light = false, className = "" }: { light?: boolean; 
           maskImage: `url("${logoUrl}")`,
           WebkitMaskPosition: "center",
           maskPosition: "center",
+          maskMode: "alpha",
           WebkitMaskRepeat: "no-repeat",
           maskRepeat: "no-repeat",
           WebkitMaskSize: "contain",
