@@ -2,6 +2,8 @@
 
 Premium, editorial ecommerce storefront for BUMBLYZ Drop 01.
 
+Live site: https://setayeshchegini.github.io/bumblyz/
+
 ## Run locally
 
 ```bash
@@ -16,6 +18,8 @@ npm run lint
 npm run typecheck
 npm run build
 ```
+
+Pushes to `main` are built as a static Next.js export and deployed to GitHub Pages by `.github/workflows/pages.yml`.
 
 ## Updating products and assets
 

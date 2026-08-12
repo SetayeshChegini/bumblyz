@@ -8,6 +8,7 @@ import { products } from "@/data/products";
 import { Newsletter } from "@/components/newsletter";
 import { ProductCard } from "@/components/product-card";
 import { Reveal } from "@/components/reveal";
+import { assetPath } from "@/lib/site";
 
 function BrandTracker() {
   const reduceMotion = useReducedMotion();
@@ -15,23 +16,23 @@ function BrandTracker() {
   const x = useTransform(scrollYProgress, [0.12, 0.5], ["3vw", "82vw"]);
   return (
     <motion.div className="brand-tracker" style={{ x: reduceMotion ? 0 : x }} aria-hidden="true">
-      <Image src="/brand-mark.webp" alt="" fill sizes="38px" /><i />
+      <Image src={assetPath("/brand-mark.webp")} alt="" fill sizes="38px" /><i />
     </motion.div>
   );
 }
 
 const lookbook = [
-  { src: "/images/campaign-03.webp", label: "01 / CITY LINE", href: "/products/essential-hoodie", className: "look-a" },
-  { src: "/images/campaign-02.webp", label: "02 / AFTER DARK", href: "/products/heavyweight-hoodie", className: "look-b" },
-  { src: "/images/look-01.webp", label: "03 / DETAIL", href: "/lookbook", className: "look-c" },
-  { src: "/images/campaign-01.webp", label: "04 / DROP 01", href: "/products/bee-logo-hoodie", className: "look-d" },
+  { src: assetPath("/images/campaign-03.webp"), label: "01 / CITY LINE", href: "/products/essential-hoodie", className: "look-a" },
+  { src: assetPath("/images/campaign-02.webp"), label: "02 / AFTER DARK", href: "/products/heavyweight-hoodie", className: "look-b" },
+  { src: assetPath("/images/look-01.webp"), label: "03 / DETAIL", href: "/lookbook", className: "look-c" },
+  { src: assetPath("/images/campaign-01.webp"), label: "04 / DROP 01", href: "/products/bee-logo-hoodie", className: "look-d" },
 ];
 
 export default function HomePage() {
   return (
     <div id="top" className="home-page">
       <section className="hero">
-        <Image src="/images/campaign-02.webp" alt="BUMBLYZ Drop 01 streetwear campaign" fill priority sizes="100vw" className="hero-image" />
+        <Image src={assetPath("/images/campaign-02.webp")} alt="BUMBLYZ Drop 01 streetwear campaign" fill priority sizes="100vw" className="hero-image" />
         <div className="hero-shade" />
         <div className="hero-kicker"><span>TORONTO / CA</span><span>DROP 01 — 2026</span></div>
         <motion.div className="hero-copy" initial="hidden" animate="visible" variants={{ visible: { transition: { staggerChildren: 0.09 } } }}>
@@ -76,15 +77,15 @@ export default function HomePage() {
         <div className="collections-intro"><span>03 / SHOP BY DROP</span><p>Three chapters.<br />One point of view.</p></div>
         <div className="collection-cards">
           <Link href="/shop?filter=new" className="collection-card">
-            <Image src="/images/campaign-03.webp" alt="Drop 01 collection" fill sizes="(max-width: 700px) 100vw, 34vw" />
+            <Image src={assetPath("/images/campaign-03.webp")} alt="Drop 01 collection" fill sizes="(max-width: 700px) 100vw, 34vw" />
             <span>01</span><h3>DROP 01</h3><ArrowUpRight />
           </Link>
           <Link href="/shop" className="collection-card">
-            <Image src="/images/hero.webp" alt="BUMBLYZ essentials collection" fill sizes="(max-width: 700px) 100vw, 34vw" />
+            <Image src={assetPath("/images/hero.webp")} alt="BUMBLYZ essentials collection" fill sizes="(max-width: 700px) 100vw, 34vw" />
             <span>02</span><h3>ESSENTIALS</h3><ArrowUpRight />
           </Link>
           <div className="collection-card collection-card--soon">
-            <Image src="/images/look-04.webp" alt="Future BUMBLYZ collection" fill sizes="(max-width: 700px) 100vw, 34vw" />
+            <Image src={assetPath("/images/look-04.webp")} alt="Future BUMBLYZ collection" fill sizes="(max-width: 700px) 100vw, 34vw" />
             <span>03</span><h3>COMING SOON</h3><small>NOTIFY ME</small>
           </div>
         </div>

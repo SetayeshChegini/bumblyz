@@ -1,15 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
+import { assetPath } from "@/lib/site";
 
 export default function AboutPage() {
   return (
     <div className="about-page">
       <header className="page-hero about-hero"><span>BUMBLYZ / THE IDEA</span><h1>THIS IS<br /><em>BUMBLYZ.</em></h1><p>NOT JUST ANOTHER HOODIE.</p></header>
       <section className="about-intro">
-        <div className="about-logo-art"><Image src="/brand-logo.webp" alt="BUMBLYZ Shop bee logo" fill sizes="(max-width: 760px) 92vw, 58vw" /></div>
+        <div className="about-logo-art"><Image src={assetPath("/brand-logo.webp")} alt="BUMBLYZ Shop bee logo" fill sizes="(max-width: 760px) 92vw, 58vw" /></div>
         <div><span>01 / WHO WE ARE</span><p>BUMBLYZ started with a simple idea: the piece you wear most should say the most about you. We make heavyweight streetwear with strong silhouettes, quiet details and enough attitude to become your everyday uniform.</p></div>
       </section>
-      <section className="about-photo"><Image src="/images/campaign-02.webp" alt="BUMBLYZ streetwear campaign photographed in the city" fill sizes="100vw" /><span>DROP 01 / BEHIND THE FORM</span></section>
+      <section className="about-photo"><Image src={assetPath("/images/campaign-02.webp")} alt="BUMBLYZ streetwear campaign photographed in the city" fill sizes="100vw" /><span>DROP 01 / BEHIND THE FORM</span></section>
       <section className="about-values">
         <article><span>01</span><h2>WEIGHT</h2><p>Dense, considered fabrics designed to feel substantial and wear beautifully.</p></article>
         <article><span>02</span><h2>SHAPE</h2><p>Relaxed proportions that look intentional from every angle.</p></article>

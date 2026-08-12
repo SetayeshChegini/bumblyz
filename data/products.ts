@@ -34,10 +34,10 @@ export const products: Product[] = [
     ],
     sizes: ["S", "M", "L", "XL"],
     images: [
-      "/images/campaign-03.webp",
-      "/images/campaign-02.webp",
-      "/images/hero.webp",
-      "/images/look-04.webp",
+      assetPath("/images/campaign-03.webp"),
+      assetPath("/images/campaign-02.webp"),
+      assetPath("/images/hero.webp"),
+      assetPath("/images/look-04.webp"),
     ],
     description:
       "An everyday heavyweight hoodie cut with room through the body and a clean, structured drape.",
@@ -60,10 +60,10 @@ export const products: Product[] = [
     ],
     sizes: ["S", "M", "L", "XL"],
     images: [
-      "/images/campaign-02.webp",
-      "/images/campaign-01.webp",
-      "/images/hero.webp",
-      "/images/look-01.webp",
+      assetPath("/images/campaign-02.webp"),
+      assetPath("/images/campaign-01.webp"),
+      assetPath("/images/hero.webp"),
+      assetPath("/images/look-01.webp"),
     ],
     description:
       "Dense fleece, substantial structure and a deliberately oversized shape built for colder days.",
@@ -86,10 +86,10 @@ export const products: Product[] = [
     ],
     sizes: ["S", "M", "L", "XL"],
     images: [
-      "/images/campaign-01.webp",
-      "/images/campaign-03.webp",
-      "/images/hero.webp",
-      "/images/look-02.webp",
+      assetPath("/images/campaign-01.webp"),
+      assetPath("/images/campaign-03.webp"),
+      assetPath("/images/hero.webp"),
+      assetPath("/images/look-02.webp"),
     ],
     description:
       "A minimal logo hoodie with the BUMBLYZ signature placed quietly at the chest and boldly at the back.",
@@ -113,10 +113,10 @@ export const products: Product[] = [
     ],
     sizes: ["S", "M", "L", "XL"],
     images: [
-      "/images/campaign-03.webp",
-      "/images/campaign-02.webp",
-      "/images/look-04.webp",
-      "/images/hero.webp",
+      assetPath("/images/campaign-03.webp"),
+      assetPath("/images/campaign-02.webp"),
+      assetPath("/images/look-04.webp"),
+      assetPath("/images/hero.webp"),
     ],
     description:
       "Maximum volume with balanced proportions, finished with a washed hand for a worn-in feel from day one.",
@@ -133,3 +133,4 @@ export const products: Product[] = [
 export const formatPrice = (price: number) => `$${price.toFixed(0)} CAD`;
 
 export const getProduct = (slug: string) => products.find((product) => product.slug === slug);
+import { assetPath } from "@/lib/site";

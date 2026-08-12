@@ -6,6 +6,7 @@
     "dev": "next dev",
     "typecheck": "tsc --noEmit",
     "build": "next build",
+    "check:pages": "node scripts/check-pages-build.mjs",
     "start": "next start",
     "lint": "eslint"
   },
