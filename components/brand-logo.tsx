@@ -1,20 +1,30 @@
-import Image from "next/image";
 import Link from "next/link";
 import { assetPath } from "@/lib/site";
 
 export function BrandLogo({ light = false, className = "" }: { light?: boolean; className?: string }) {
+  const logoUrl = assetPath("/brand-logo.webp");
+
   return (
     <Link
       href="/"
       className={`brand-logo ${light ? "brand-logo--light" : ""} ${className}`}
       aria-label="BUMBLYZ home"
     >
-      <Image
-        src={assetPath("/brand-logo.webp")}
-        alt="BUMBLYZ Shop bee logo"
-        fill
-        sizes="(max-width: 760px) 112px, 152px"
-        priority
+      <span
+        aria-hidden="true"
+        style={{
+          position: "absolute",
+          inset: 0,
+          backgroundColor: "currentColor",
+          WebkitMaskImage: `url("${logoUrl}")`,
+          maskImage: `url("${logoUrl}")`,
+          WebkitMaskPosition: "center",
+          maskPosition: "center",
+          WebkitMaskRepeat: "no-repeat",
+          maskRepeat: "no-repeat",
+          WebkitMaskSize: "contain",
+          maskSize: "contain",
+        }}
       />
     </Link>
   );
