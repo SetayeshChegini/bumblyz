@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 const outputRoot = path.resolve("out");
-const basePath = "/bumblyz";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 const htmlFiles = [];
 
 function walk(directory) {
@@ -25,7 +25,7 @@ for (const htmlFile of htmlFiles) {
     const url = match[1];
     if (!url.startsWith("/")) continue;
 
-    if (url !== basePath && !url.startsWith(`${basePath}/`)) {
+    if (basePath && url !== basePath && !url.startsWith(`${basePath}/`)) {
       incorrectBasePaths.push({ htmlFile, url });
       continue;
     }
@@ -48,4 +48,6 @@ if (incorrectBasePaths.length || missingTargets.length) {
   process.exit(1);
 }
 
-console.log(`Checked ${htmlFiles.length} exported HTML files for ${basePath}/.`);
+console.log(
+  `Checked ${htmlFiles.length} exported HTML files for ${basePath ? `${basePath}/` : "/"}.`,
+);

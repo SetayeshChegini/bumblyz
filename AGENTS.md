@@ -9,7 +9,7 @@ For every requested website change:
 3. Verify desktop and mobile layouts, including widths near 375px, 390px, and 430px.
 4. Run the available lint, typecheck, tests, and production build; fix failures.
 5. Commit the completed work and publish it to `main` without asking for routine approval.
-6. Confirm the GitHub Pages workflow succeeds and verify the newest version at `https://setayeshchegini.github.io/bumblyz/`.
+6. Confirm the GitHub Pages workflow succeeds and verify the newest version at `https://bumblyz.com/`.
 
 Prefer direct updates to `main` when allowed. If a branch or pull request is required, merge the completed work into `main` when permissions allow. Do not leave finished work on an unmerged branch.
 

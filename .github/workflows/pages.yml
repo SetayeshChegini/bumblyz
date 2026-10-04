@@ -42,8 +42,7 @@ jobs:
       - name: Build static site
         run: npm run build
         env:
-          NEXT_PUBLIC_BASE_PATH: /bumblyz
-          NEXT_PUBLIC_SITE_URL: https://setayeshchegini.github.io/bumblyz
+          NEXT_PUBLIC_SITE_URL: https://bumblyz.com
 
       - name: Verify GitHub Pages paths
         run: npm run check:pages

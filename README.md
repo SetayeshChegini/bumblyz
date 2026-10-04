@@ -2,7 +2,7 @@
 
 Premium, editorial ecommerce storefront for BUMBLYZ Drop 01.
 
-Live site: https://setayeshchegini.github.io/bumblyz/
+Live site: https://bumblyz.com/
 
 ## Run locally
 
